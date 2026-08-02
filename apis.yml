@@ -1,7 +1,25 @@
 aid: zengaming
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/zengaming.png
 name: Zengaming
-description: Zengaming is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Zengaming builds gaming marketplaces and community products focused on helping gamers manage
+  and monetize their digital assets. The company is best known for LootBear, a CS:GO / CS2 skin
+  rental and marketplace platform, alongside an eSports social network that connects players and
+  teams to compete and get discovered. Zengaming reports serving over 6 million users across its
+  products and is backed by 500 Global. As of this enrichment pass the company operates a
+  consumer-facing marketing site only (an Unbounce landing page); no public developer API,
+  documentation, developer portal, SDKs, or machine-readable API surface could be found.
 url: https://raw.githubusercontent.com/api-evangelist/zengaming/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Gaming
+- Marketplace
+- Esports
+- Digital Assets
+- CS:GO Skins
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/zengaming-domain-security.yml
 - type: Website
-  url: https://zengaming.com
+  url: https://www.zengaming.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
